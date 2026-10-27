@@ -1,12 +1,12 @@
-# PID Lab
+# PID Lab — Heater Edition
 
-Learn how P, PI and PID control behave by experimenting with a virtual heater.
+A visual, interactive learning page for building an intuitive understanding of PID control with a virtual heater.
 
-**[Open PID Lab](https://mahlecube.github.io/pid-lab/)** · **[GitHub repository](https://github.com/MahleCube/pid-lab)**
+# [▶ Open PID Lab Heater](https://mahlecube.github.io/pid-lab/)
 
-Developed by [MahleCube](https://github.com/MahleCube).
+Interactive simulator · No installation required
 
-## Explore
+## Features
 
 - Adjust proportional gain, integral time, derivative time and control period.
 - Change the heater's gain, time constant, dead time, temperatures and output limit separately from the controller.
@@ -67,11 +67,3 @@ The tests write local screenshots and verification reports, which are excluded f
 Run `npm run build` and commit the generated files alongside source changes. The build checks that every added language covers all catalog entries and preserves numbered placeholders such as `{0}`.
 
 GitHub Pages serves the `main` branch from its root directory. The `.nojekyll` file keeps publication as a plain static site; no build workflow or server is required.
-
-## 日本語
-
-[PID Lab を開く](https://mahlecube.github.io/pid-lab/)。初回は英語ですが、画面上部の言語設定から日本語へ切り替えられます。
-
-仮想ヒーターを使い、P・PI・PID の応答、ゲインや積分時間、出力制限の影響を学ぶためのツールです。機器の性質と制御器の設定を別々に変更し、A/B の波形を比較できます。各制御周期の計算では、前回の積分値や計算出力も確認できます。
-
-`pid-lab.html` をダウンロードすればオフラインでも使用できます。実機の調整値や安全性を保証するものではありません。
