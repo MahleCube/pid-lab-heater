@@ -1,5 +1,5 @@
 {
-  "m001": "Lab PID",
+  "m001": "Lab PID — Versi Pemanas",
   "m002": "Pahami kendali dengan pemanas virtual",
   "m003": "Setiap perubahan pengaturan memulai ulang simulasi",
   "m004": "dengan kondisi awal yang sama.",
@@ -97,7 +97,7 @@
   "m096": "Proses dan pengendali",
   "m097": "Parameter ini menggambarkan sifat proses itu sendiri. Dalam praktik, nilainya diperoleh dari pengukuran. Di lab ini, Anda dapat mengubahnya untuk melihat respons pengendali yang sama.",
   "m098": "Model pembelajaran orde satu dengan waktu tunda, berupa pemanas yang melepaskan panas ke lingkungan. Model ini tidak menjamin nilai penyetelan atau keselamatan perangkat nyata.",
-  "m099": "Lab PID — Jelajahi kendali dengan pemanas virtual",
+  "m099": "Lab PID — Versi Pemanas",
   "m100": "Suhu target",
   "m101": "Suhu yang ingin dicapai dan dipertahankan.",
   "m102": "Penguatan proporsional Kp",

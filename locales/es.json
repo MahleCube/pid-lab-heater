@@ -1,5 +1,5 @@
 {
-  "m001": "PID Lab",
+  "m001": "Laboratorio PID — Versión con calentador",
   "m002": "Comprende el control con un calentador virtual",
   "m003": "Cada cambio de ajuste reinicia la simulación",
   "m004": "desde las mismas condiciones iniciales.",
@@ -97,7 +97,7 @@
   "m096": "Proceso y controlador",
   "m097": "Estos parámetros describen el propio proceso. En la práctica, se identifican mediante mediciones. En este laboratorio puedes cambiarlos libremente para observar la respuesta del mismo controlador.",
   "m098": "Modelo didáctico de primer orden con tiempo muerto que representa un calentador que pierde calor al ambiente. No determina ajustes ni garantiza la seguridad de equipos reales.",
-  "m099": "PID Lab — Explora el control con un calentador virtual",
+  "m099": "Laboratorio PID — Versión con calentador",
   "m100": "Temperatura de consigna",
   "m101": "Temperatura que se desea alcanzar y mantener.",
   "m102": "Ganancia proporcional Kp",

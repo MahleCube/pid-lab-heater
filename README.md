@@ -2,7 +2,7 @@
 
 A visual, interactive learning page for building an intuitive understanding of PID control with a virtual heater.
 
-# [▶ Open PID Lab Heater](https://mahlecube.github.io/pid-lab/)
+# [▶ Open PID Lab Heater](https://mahlecube.github.io/pid-lab-heater/)
 
 Interactive simulator · No installation required
 
@@ -21,7 +21,7 @@ The application runs entirely in the browser. It has no runtime package dependen
 
 ## Use offline
 
-Download [`pid-lab.html`](https://github.com/MahleCube/pid-lab/blob/main/pid-lab.html) using GitHub's **Download raw file** action, then open the saved file in a browser. It contains the application, styles and translations in one file. You can also clone the repository and open `index.html` locally.
+Download [`pid-lab.html`](https://github.com/MahleCube/pid-lab-heater/blob/main/pid-lab.html) using GitHub's **Download raw file** action, then open the saved file in a browser. It contains the application, styles and translations in one file. You can also clone the repository and open `index.html` locally.
 
 ## Model
 

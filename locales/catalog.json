@@ -1,9 +1,9 @@
 {
   "m001": {
-    "en": "PID Lab",
-    "ja": "PIDラボ",
+    "en": "PID Lab — Heater Edition",
+    "ja": "PIDラボ — ヒーター版",
     "aliases": [
-      "PIDラボ"
+      "PIDラボ — ヒーター版"
     ]
   },
   "m002": {
@@ -692,10 +692,10 @@
     ]
   },
   "m099": {
-    "en": "PID Lab — Explore control with a virtual heater",
-    "ja": "PIDラボ — 仮想ヒーターで制御を体感",
+    "en": "PID Lab — Heater Edition",
+    "ja": "PIDラボ — ヒーター版",
     "aliases": [
-      "PIDラボ — 仮想ヒーターで制御を体感"
+      "PIDラボ — ヒーター版"
     ]
   },
   "m100": {

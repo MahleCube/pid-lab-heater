@@ -1,5 +1,5 @@
 {
-  "m001": "PID-Labor",
+  "m001": "PID-Labor — Version mit Heizgerät",
   "m002": "Regelung mit einem virtuellen Heizer verstehen",
   "m003": "Jede Einstellungsänderung startet die Simulation neu",
   "m004": "mit denselben Anfangsbedingungen.",
@@ -97,7 +97,7 @@
   "m096": "Regelstrecke und Regler",
   "m097": "Diese Parameter beschreiben die Regelstrecke selbst. In der Praxis werden sie durch Messungen ermittelt. Hier lassen sie sich frei ändern, um die Reaktion desselben Reglers zu untersuchen.",
   "m098": "Lernmodell erster Ordnung mit Totzeit: ein Heizer, der Wärme an seine Umgebung abgibt. Daraus lassen sich keine zugesicherten Reglereinstellungen oder Sicherheitsnachweise für reale Geräte ableiten.",
-  "m099": "PID-Labor — Regelung mit einem virtuellen Heizer erkunden",
+  "m099": "PID-Labor — Version mit Heizgerät",
   "m100": "Solltemperatur",
   "m101": "Die Temperatur, die erreicht und gehalten werden soll.",
   "m102": "Proportionalverstärkung Kp",

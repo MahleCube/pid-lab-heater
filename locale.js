@@ -18,7 +18,7 @@
   }
   function applyStatic(){
     document.documentElement.lang=language;
-    document.title=text('PIDラボ — 仮想ヒーターで制御を体感','PID Lab — Explore control with a virtual heater');
+    document.title=text('PIDラボ — ヒーター版','PID Lab — Heater Edition');
     const separateWords=!['ja','zh-Hans','zh-Hant'].includes(language);
     for(const b of textBindings){
       if(!b.node.isConnected)continue;

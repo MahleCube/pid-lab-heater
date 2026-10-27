@@ -1,5 +1,5 @@
 {
-  "m001": "PID Lab",
+  "m001": "Laboratoire PID — Version chauffage",
   "m002": "Comprenez la régulation avec un chauffage virtuel",
   "m003": "Chaque changement de réglage relance la simulation",
   "m004": "à partir des mêmes conditions initiales.",
@@ -97,7 +97,7 @@
   "m096": "Procédé et régulateur",
   "m097": "Ces paramètres décrivent le procédé lui-même. En pratique, ils sont identifiés par des mesures. Dans ce laboratoire, modifiez-les librement pour observer la réponse du même régulateur.",
   "m098": "Modèle pédagogique du premier ordre avec temps mort, représentant un chauffage qui perd de la chaleur vers l’environnement. Il ne détermine pas les réglages et ne garantit pas la sécurité d’un équipement réel.",
-  "m099": "PID Lab — Explorez la régulation avec un chauffage virtuel",
+  "m099": "Laboratoire PID — Version chauffage",
   "m100": "Température de consigne",
   "m101": "Température à atteindre et à maintenir.",
   "m102": "Gain proportionnel Kp",

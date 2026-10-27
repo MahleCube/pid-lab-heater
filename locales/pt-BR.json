@@ -1,5 +1,5 @@
 {
-  "m001": "PID Lab",
+  "m001": "Laboratório PID — Versão com aquecedor",
   "m002": "Entenda o controle com um aquecedor virtual",
   "m003": "Cada alteração de ajuste reinicia a simulação",
   "m004": "a partir das mesmas condições iniciais.",
@@ -97,7 +97,7 @@
   "m096": "Processo e controlador",
   "m097": "Estes parâmetros descrevem o próprio processo. Na prática, são identificados por medições. Neste laboratório, altere-os livremente para observar a resposta do mesmo controlador.",
   "m098": "Modelo didático de primeira ordem com tempo morto, representando um aquecedor que perde calor para o ambiente. Ele não determina ajustes nem garante a segurança de equipamentos reais.",
-  "m099": "PID Lab — Explore o controle com um aquecedor virtual",
+  "m099": "Laboratório PID — Versão com aquecedor",
   "m100": "Temperatura de referência",
   "m101": "Temperatura que se deseja atingir e manter.",
   "m102": "Ganho proporcional Kp",
