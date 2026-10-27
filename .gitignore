@@ -1,0 +1,13 @@
+node_modules/
+*-verification.json
+test-results/
+playwright-report/
+/desktop.png
+/mobile.png
+/mobile-chart.png
+/compare-*.png
+/english-*.png
+/multilingual-*.png
+/language-settings-*.png
+.DS_Store
+Thumbs.db

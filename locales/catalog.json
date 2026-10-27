@@ -1,0 +1,1275 @@
+{
+  "m001": {
+    "en": "PID Lab",
+    "ja": "PIDラボ",
+    "aliases": [
+      "PIDラボ"
+    ]
+  },
+  "m002": {
+    "en": "Build intuition with a virtual heater",
+    "ja": "仮想ヒーターで、制御の感覚をつかむ",
+    "aliases": [
+      "仮想ヒーターで、制御の感覚をつかむ"
+    ]
+  },
+  "m003": {
+    "en": "Each setting change restarts the simulation",
+    "ja": "設定を動かすたびに、",
+    "aliases": [
+      "設定を動かすたびに、"
+    ]
+  },
+  "m004": {
+    "en": "from the same initial conditions.",
+    "ja": "同じ初期状態から再計算します。",
+    "aliases": [
+      "同じ初期状態から再計算します。"
+    ]
+  },
+  "m005": {
+    "en": "Display language",
+    "ja": "表示言語",
+    "aliases": [
+      "表示言語"
+    ]
+  },
+  "m006": {
+    "en": "Jump to section",
+    "ja": "画面内の移動",
+    "aliases": [
+      "画面内の移動"
+    ]
+  },
+  "m007": {
+    "en": "Controller",
+    "ja": "制御器",
+    "aliases": [
+      "制御器"
+    ]
+  },
+  "m008": {
+    "en": "Plant model",
+    "ja": "機器モデル",
+    "aliases": [
+      "機器モデル"
+    ]
+  },
+  "m009": {
+    "en": "Charts",
+    "ja": "グラフ",
+    "aliases": [
+      "グラフ"
+    ]
+  },
+  "m010": {
+    "en": "Controller settings",
+    "ja": "制御器の調整",
+    "aliases": [
+      "制御器の調整"
+    ]
+  },
+  "m011": {
+    "en": "How the output is calculated",
+    "ja": "どのように操作するか",
+    "aliases": [
+      "どのように操作するか"
+    ]
+  },
+  "m012": {
+    "en": "Try a preset",
+    "ja": "試してみる設定",
+    "aliases": [
+      "試してみる設定"
+    ]
+  },
+  "m013": {
+    "en": "Basic PI control",
+    "ja": "基本の PI 制御",
+    "aliases": [
+      "基本の PI 制御"
+    ]
+  },
+  "m014": {
+    "en": "Proportional control only",
+    "ja": "P だけで制御する",
+    "aliases": [
+      "P だけで制御する"
+    ]
+  },
+  "m015": {
+    "en": "Fast PID control",
+    "ja": "速い PID 制御",
+    "aliases": [
+      "速い PID 制御"
+    ]
+  },
+  "m016": {
+    "en": "Stronger integral action",
+    "ja": "積分を強くする",
+    "aliases": [
+      "積分を強くする"
+    ]
+  },
+  "m017": {
+    "en": "Explore output limits",
+    "ja": "出力の上限を体感する",
+    "aliases": [
+      "出力の上限を体感する"
+    ]
+  },
+  "m018": {
+    "en": "Controller type",
+    "ja": "制御の種類",
+    "aliases": [
+      "制御の種類"
+    ]
+  },
+  "m019": {
+    "en": "Output calculation",
+    "ja": "出力の計算方法",
+    "aliases": [
+      "出力の計算方法"
+    ]
+  },
+  "m020": {
+    "en": "From a fixed baseline (positional)",
+    "ja": "基準点から計算（位置形）",
+    "aliases": [
+      "基準点から計算（位置形）"
+    ]
+  },
+  "m021": {
+    "en": "Update the previous command (incremental)",
+    "ja": "前回の計算値から更新（増分形）",
+    "aliases": [
+      "前回の計算値から更新（増分形）"
+    ]
+  },
+  "m022": {
+    "en": "Derived integral and derivative gains",
+    "ja": "換算した積分ゲインと微分ゲイン",
+    "aliases": [
+      "換算した積分ゲインと微分ゲイン"
+    ]
+  },
+  "m023": {
+    "en": "Time-constant form: Ki = Kp / Ti and Kd = Kp × Td. Changing Kp also changes Ki and Kd.",
+    "ja": "時間形式を使用：Ki = Kp / Ti、Kd = Kp × Td。Kp を動かすと Ki・Kd も変わります。",
+    "aliases": [
+      "時間形式を使用：Ki = Kp / Ti、Kd = Kp × Td。Kp を動かすと Ki・Kd も変わります。"
+    ]
+  },
+  "m024": {
+    "en": "Prevent integral windup",
+    "ja": "積分のたまりすぎを防ぐ",
+    "aliases": [
+      "積分のたまりすぎを防ぐ"
+    ]
+  },
+  "m025": {
+    "en": "When the output reaches a limit",
+    "ja": "出力が上限・下限に達したとき",
+    "aliases": [
+      "出力が上限・下限に達したとき"
+    ]
+  },
+  "m026": {
+    "en": "Simulation results",
+    "ja": "シミュレーション結果",
+    "aliases": [
+      "シミュレーション結果"
+    ]
+  },
+  "m027": {
+    "en": "Waveform display",
+    "ja": "波形の表示方法",
+    "aliases": [
+      "波形の表示方法"
+    ]
+  },
+  "m028": {
+    "en": "View mode",
+    "ja": "表示モード",
+    "aliases": [
+      "表示モード"
+    ]
+  },
+  "m029": {
+    "en": "Single setup",
+    "ja": "1つの設定",
+    "aliases": [
+      "1つの設定"
+    ]
+  },
+  "m030": {
+    "en": "Compare A / B side by side",
+    "ja": "A / B を並べて比較",
+    "aliases": [
+      "A / B を並べて比較"
+    ]
+  },
+  "m031": {
+    "en": "Choose the setup to edit",
+    "ja": "編集する設定",
+    "aliases": [
+      "編集する設定"
+    ]
+  },
+  "m032": {
+    "en": "Edit A",
+    "ja": "A を編集",
+    "aliases": [
+      "A を編集"
+    ]
+  },
+  "m033": {
+    "en": "Edit B",
+    "ja": "B を編集",
+    "aliases": [
+      "B を編集"
+    ]
+  },
+  "m034": {
+    "en": "Copy settings from A to B",
+    "ja": "A の設定を B にコピー",
+    "aliases": [
+      "A の設定を B にコピー"
+    ]
+  },
+  "m035": {
+    "en": "Choose A or B, then adjust its controller or plant settings. Both use the same observation period and selected time.",
+    "ja": "編集する設定を選び、制御器・機器モデルの調整欄で変更。観測期間と時刻は共通です。",
+    "aliases": [
+      "編集する設定を選び、制御器・機器モデルの調整欄で変更。観測期間と時刻は共通です。"
+    ]
+  },
+  "m036": {
+    "en": "Current state",
+    "ja": "現在の状態",
+    "aliases": [
+      "現在の状態"
+    ]
+  },
+  "m037": {
+    "en": "At the selected chart time",
+    "ja": "グラフ上の選択時刻",
+    "aliases": [
+      "グラフ上の選択時刻"
+    ]
+  },
+  "m038": {
+    "en": "Temperature",
+    "ja": "温度",
+    "aliases": [
+      "温度"
+    ]
+  },
+  "m039": {
+    "en": "Error to setpoint",
+    "ja": "目標との差",
+    "aliases": [
+      "目標との差"
+    ]
+  },
+  "m040": {
+    "en": "Heater output",
+    "ja": "ヒーター出力",
+    "aliases": [
+      "ヒーター出力",
+      "ヒーターをどれだけ動かしたか"
+    ]
+  },
+  "m041": {
+    "en": "Delayed plant input",
+    "ja": "遅れて届いた出力",
+    "aliases": [
+      "遅れて届いた出力"
+    ]
+  },
+  "m042": {
+    "en": "Heat",
+    "ja": "加熱",
+    "aliases": [
+      "加熱"
+    ]
+  },
+  "m043": {
+    "en": "Fraction of rated power",
+    "ja": "最大出力の割合",
+    "aliases": [
+      "最大出力の割合"
+    ]
+  },
+  "m044": {
+    "en": "Time controls",
+    "ja": "時間の操作",
+    "aliases": [
+      "時間の操作"
+    ]
+  },
+  "m045": {
+    "en": "Play",
+    "ja": "再生",
+    "aliases": [
+      "再生"
+    ]
+  },
+  "m046": {
+    "en": "Previous control step",
+    "ja": "前の制御周期へ",
+    "aliases": [
+      "前の制御周期へ"
+    ]
+  },
+  "m047": {
+    "en": "Next control step",
+    "ja": "次の制御周期へ",
+    "aliases": [
+      "次の制御周期へ"
+    ]
+  },
+  "m048": {
+    "en": "← 1 step",
+    "ja": "← 1周期",
+    "aliases": [
+      "← 1周期"
+    ]
+  },
+  "m049": {
+    "en": "1 step →",
+    "ja": "1周期 →",
+    "aliases": [
+      "1周期 →"
+    ]
+  },
+  "m050": {
+    "en": "Observation period",
+    "ja": "観測期間",
+    "aliases": [
+      "観測期間"
+    ]
+  },
+  "m051": {
+    "en": "180 s",
+    "ja": "180 秒",
+    "aliases": [
+      "180 秒"
+    ]
+  },
+  "m052": {
+    "en": "300 s",
+    "ja": "300 秒",
+    "aliases": [
+      "300 秒"
+    ]
+  },
+  "m053": {
+    "en": "600 s",
+    "ja": "600 秒",
+    "aliases": [
+      "600 秒"
+    ]
+  },
+  "m054": {
+    "en": "1,200 s",
+    "ja": "1,200 秒",
+    "aliases": [
+      "1,200 秒"
+    ]
+  },
+  "m055": {
+    "en": "1,800 s",
+    "ja": "1,800 秒",
+    "aliases": [
+      "1,800 秒"
+    ]
+  },
+  "m056": {
+    "en": "Selected time",
+    "ja": "選択時刻",
+    "aliases": [
+      "選択時刻"
+    ]
+  },
+  "m057": {
+    "en": "Overlay the other calculation form",
+    "ja": "もう一方の計算方法を重ねる",
+    "aliases": [
+      "もう一方の計算方法を重ねる"
+    ]
+  },
+  "m058": {
+    "en": "Keep as reference",
+    "ja": "参考線として残す",
+    "aliases": [
+      "参考線として残す"
+    ]
+  },
+  "m059": {
+    "en": "Clear reference",
+    "ja": "参考線を消す",
+    "aliases": [
+      "参考線を消す"
+    ]
+  },
+  "m060": {
+    "en": "Both panels use matching vertical and time scales. P, I and D always show contributions to output in comparison mode, even when the calculation forms differ.",
+    "ja": "左右の縦軸・時間軸をそろえて表示します。比較中の P・I・D は、計算方法が異なる場合も「出力への寄与」で統一します。",
+    "aliases": [
+      "左右の縦軸・時間軸をそろえて表示します。比較中の P・I・D は、計算方法が異なる場合も「出力への寄与」で統一します。"
+    ]
+  },
+  "m061": {
+    "en": "Temperature response",
+    "ja": "温度は目標に近づくか",
+    "aliases": [
+      "温度は目標に近づくか"
+    ]
+  },
+  "m062": {
+    "en": "Temperature °C",
+    "ja": "温度 °C",
+    "aliases": [
+      "温度 °C"
+    ]
+  },
+  "m063": {
+    "en": "Temperature chart legend",
+    "ja": "温度グラフの凡例",
+    "aliases": [
+      "温度グラフの凡例"
+    ]
+  },
+  "m064": {
+    "en": "Temperature chart legend for B",
+    "ja": "B の温度グラフの凡例",
+    "aliases": [
+      "B の温度グラフの凡例"
+    ]
+  },
+  "m065": {
+    "en": "% of rated output",
+    "ja": "最大出力に対する %",
+    "aliases": [
+      "最大出力に対する %"
+    ]
+  },
+  "m066": {
+    "en": "Output chart legend",
+    "ja": "出力グラフの凡例",
+    "aliases": [
+      "出力グラフの凡例"
+    ]
+  },
+  "m067": {
+    "en": "Output chart legend for B",
+    "ja": "B の出力グラフの凡例",
+    "aliases": [
+      "B の出力グラフの凡例"
+    ]
+  },
+  "m068": {
+    "en": "P, I and D contributions",
+    "ja": "P・I・D の働き",
+    "aliases": [
+      "P・I・D の働き"
+    ]
+  },
+  "m069": {
+    "en": "Contribution to output",
+    "ja": "計算への寄与",
+    "aliases": [
+      "計算への寄与"
+    ]
+  },
+  "m070": {
+    "en": "Control terms legend",
+    "ja": "制御項のグラフの凡例",
+    "aliases": [
+      "制御項のグラフの凡例"
+    ]
+  },
+  "m071": {
+    "en": "Control terms legend for B",
+    "ja": "B の制御項のグラフの凡例",
+    "aliases": [
+      "B の制御項のグラフの凡例"
+    ]
+  },
+  "m072": {
+    "en": "Follow this calculation step",
+    "ja": "この瞬間の計算を追う",
+    "aliases": [
+      "この瞬間の計算を追う"
+    ]
+  },
+  "m073": {
+    "en": "Model and terminology",
+    "ja": "モデルと用語を確認する",
+    "aliases": [
+      "モデルと用語を確認する"
+    ]
+  },
+  "m074": {
+    "en": "Output percentage",
+    "ja": "出力の %",
+    "aliases": [
+      "出力の %"
+    ]
+  },
+  "m075": {
+    "en": "is relative to the rated maximum heater output. A 10% command means one tenth of maximum power. An increment of +10 adds 10 percentage points, such as 20% → 30%; it does not mean 20% × 1.1 = 22%.",
+    "ja": "はヒーターの最大出力に対する割合です。10% は最大出力の 1/10。増分が「+10」のときは、20% → 30% のように 10 ポイント加えます。20% × 1.1 = 22% という意味ではありません。",
+    "aliases": [
+      "はヒーターの最大出力に対する割合です。10% は最大出力の 1/10。増分が「+10」のときは、20% → 30% のように 10 ポイント加えます。20% × 1.1 = 22% という意味ではありません。"
+    ]
+  },
+  "m076": {
+    "en": "Plant gain G",
+    "ja": "機器ゲイン G",
+    "aliases": [
+      "機器ゲイン G",
+      "Plant gain G"
+    ]
+  },
+  "m077": {
+    "en": "is the steady-state temperature rise in °C after increasing output by one percentage point.",
+    "ja": "は、出力を 1 ポイント増やして十分に待ったときに温度が何 °C 上がるかを表します。",
+    "aliases": [
+      "は、出力を 1 ポイント増やして十分に待ったときに温度が何 °C 上がるかを表します。"
+    ]
+  },
+  "m078": {
+    "en": "Time constant τ",
+    "ja": "時定数 τ",
+    "aliases": [
+      "時定数 τ",
+      "Time constant τ"
+    ]
+  },
+  "m079": {
+    "en": "is the time from the start of the temperature response to about 63.2% of the total change under a constant input.",
+    "ja": "は、一定出力への温度変化が始まってから、最終的な温度変化の約 63.2% に達するまでの時間です。",
+    "aliases": [
+      "は、一定出力への温度変化が始まってから、最終的な温度変化の約 63.2% に達するまでの時間です。"
+    ]
+  },
+  "m080": {
+    "en": "Dead time L",
+    "ja": "むだ時間 L",
+    "aliases": [
+      "むだ時間 L",
+      "Dead time L"
+    ]
+  },
+  "m081": {
+    "en": "is the delay before an output change begins to affect temperature. Reaching about 63.2% of the total change takes L + τ from the command change.",
+    "ja": "は、操作が温度に影響し始めるまでの待ち時間です。操作してから約 63.2% に達するまでは L + τ かかります。",
+    "aliases": [
+      "は、操作が温度に影響し始めるまでの待ち時間です。操作してから約 63.2% に達するまでは L + τ かかります。"
+    ]
+  },
+  "m082": {
+    "en": "sets the response to the current error.",
+    "ja": "は現在の誤差への反応の強さ。",
+    "aliases": [
+      "は現在の誤差への反応の強さ。"
+    ]
+  },
+  "m083": {
+    "en": "Integral time Ti",
+    "ja": "積分時間 Ti",
+    "aliases": [
+      "積分時間 Ti",
+      "Integral time Ti"
+    ]
+  },
+  "m084": {
+    "en": "makes I accumulate faster when shortened.",
+    "ja": "は短いほど I の蓄積が速くなります。",
+    "aliases": [
+      "は短いほど I の蓄積が速くなります。"
+    ]
+  },
+  "m085": {
+    "en": "Derivative time Td",
+    "ja": "微分時間 Td",
+    "aliases": [
+      "微分時間 Td",
+      "Derivative time Td"
+    ]
+  },
+  "m086": {
+    "en": "increases the correction for temperature changes when raised. Here Ki = Kp / Ti and Kd = Kp × Td, so changing Kp also changes the strength of I and D.",
+    "ja": "は大きいほど温度変化への補正が強くなります。ここでは Ki = Kp / Ti、Kd = Kp × Td と換算するため、Kp の変更は I・D の強さにも影響します。",
+    "aliases": [
+      "は大きいほど温度変化への補正が強くなります。ここでは Ki = Kp / Ti、Kd = Kp × Td と換算するため、Kp の変更は I・D の強さにも影響します。"
+    ]
+  },
+  "m087": {
+    "en": "Control period Ts",
+    "ja": "制御周期 Ts",
+    "aliases": [
+      "制御周期 Ts"
+    ]
+  },
+  "m088": {
+    "en": "is the interval between temperature measurements and command updates. The command is held between updates. This is separate from the PWM period used to switch a heater electrically on and off.",
+    "ja": "は、温度を読み取って出力を計算し直す間隔です。計算と計算の間は出力を保持します。ヒーターを電気的に ON / OFF する PWM の周期とは別です。",
+    "aliases": [
+      "は、温度を読み取って出力を計算し直す間隔です。計算と計算の間は出力を保持します。ヒーターを電気的に ON / OFF する PWM の周期とは別です。"
+    ]
+  },
+  "m089": {
+    "en": "Positional and incremental forms",
+    "ja": "位置形と増分形",
+    "aliases": [
+      "位置形と増分形"
+    ]
+  },
+  "m090": {
+    "en": "produce the same response with the same gains, initial state and limit handling. The incremental form adds this step’s change to the previous calculated command. During clipping, the internal command is kept separate from the actual heater output.",
+    "ja": "は、同じゲイン・初期状態・制限処理なら同じ応答を生みます。増分形は前回の計算値に「今回の変化分」を足します。出力を制限している間は、内部の計算値と実際のヒーター出力を区別します。",
+    "aliases": [
+      "は、同じゲイン・初期状態・制限処理なら同じ応答を生みます。増分形は前回の計算値に「今回の変化分」を足します。出力を制限している間は、内部の計算値と実際のヒーター出力を区別します。"
+    ]
+  },
+  "m091": {
+    "en": "The D term",
+    "ja": "D 項",
+    "aliases": [
+      "D 項"
+    ]
+  },
+  "m092": {
+    "en": "is calculated from changes in measured temperature and smoothed by a derivative filter. A setpoint change alone does not cause a derivative kick.",
+    "ja": "は温度の変化から計算し、微分フィルターで急激な変化をなめらかにします。目標値を変えただけでは微分の跳ね上がりは発生しません。",
+    "aliases": [
+      "は温度の変化から計算し、微分フィルターで急激な変化をなめらかにします。目標値を変えただけでは微分の跳ね上がりは発生しません。"
+    ]
+  },
+  "m093": {
+    "en": "Settling time",
+    "ja": "収束時間",
+    "aliases": [
+      "収束時間"
+    ]
+  },
+  "m094": {
+    "en": "is the earliest time after which temperature remains within ±0.1 °C of the setpoint for the rest of the observation period. Failure to settle within that period alone does not establish instability.",
+    "ja": "は、表示した観測期間の残り全体で目標の ±0.1 °C に収まる最初の時刻です。期間内に収まらなくても、それだけで不安定とは判断できません。",
+    "aliases": [
+      "は、表示した観測期間の残り全体で目標の ±0.1 °C に収まる最初の時刻です。期間内に収まらなくても、それだけで不安定とは判断できません。"
+    ]
+  },
+  "m095": {
+    "en": "Properties of the virtual heater",
+    "ja": "仮想ヒーターの性質",
+    "aliases": [
+      "仮想ヒーターの性質"
+    ]
+  },
+  "m096": {
+    "en": "Plant versus controller",
+    "ja": "機器と制御器の違い",
+    "aliases": [
+      "機器と制御器の違い"
+    ]
+  },
+  "m097": {
+    "en": "These parameters describe the plant itself. In practice, they are identified from measurements. In this lab, change them freely to see how the same controller responds.",
+    "ja": "こちらは機器そのものの性質です。現実では機器を測定して把握します。このラボでは自由に変更して、同じ制御器がどう反応するかを試せます。",
+    "aliases": [
+      "こちらは機器そのものの性質です。現実では機器を測定して把握します。このラボでは自由に変更して、同じ制御器がどう反応するかを試せます。"
+    ]
+  },
+  "m098": {
+    "en": "Educational first-order model with dead time, representing a heater that loses heat to its surroundings. It does not establish tuning values or safety for real hardware.",
+    "ja": "学習用の一次遅れ＋むだ時間モデル。放熱する仮想ヒーターを想定しています。実機向けの調整値や安全性を保証するものではありません。",
+    "aliases": [
+      "学習用の一次遅れ＋むだ時間モデル。放熱する仮想ヒーターを想定しています。実機向けの調整値や安全性を保証するものではありません。"
+    ]
+  },
+  "m099": {
+    "en": "PID Lab — Explore control with a virtual heater",
+    "ja": "PIDラボ — 仮想ヒーターで制御を体感",
+    "aliases": [
+      "PIDラボ — 仮想ヒーターで制御を体感"
+    ]
+  },
+  "m100": {
+    "en": "Target temperature",
+    "ja": "Target temperature",
+    "aliases": [
+      "Target temperature"
+    ]
+  },
+  "m101": {
+    "en": "The temperature to reach and maintain.",
+    "ja": "The temperature to reach and maintain.",
+    "aliases": [
+      "The temperature to reach and maintain."
+    ]
+  },
+  "m102": {
+    "en": "Proportional gain Kp",
+    "ja": "Proportional gain Kp",
+    "aliases": [
+      "Proportional gain Kp"
+    ]
+  },
+  "m103": {
+    "en": "Proportional output per 1°C of error.",
+    "ja": "Proportional output per 1°C of error.",
+    "aliases": [
+      "Proportional output per 1°C of error."
+    ]
+  },
+  "m104": {
+    "en": "A shorter time makes integral action stronger.",
+    "ja": "A shorter time makes integral action stronger.",
+    "aliases": [
+      "A shorter time makes integral action stronger."
+    ]
+  },
+  "m105": {
+    "en": "A longer time gives stronger correction for temperature changes.",
+    "ja": "A longer time gives stronger correction for temperature changes.",
+    "aliases": [
+      "A longer time gives stronger correction for temperature changes."
+    ]
+  },
+  "m106": {
+    "en": "Control period",
+    "ja": "Control period",
+    "aliases": [
+      "Control period"
+    ]
+  },
+  "m107": {
+    "en": "Time between measurements and output updates; separate from the PWM period.",
+    "ja": "Time between measurements and output updates; separate from the PWM period.",
+    "aliases": [
+      "Time between measurements and output updates; separate from the PWM period."
+    ]
+  },
+  "m108": {
+    "en": "Steady temperature rise for a 1 percentage-point increase in constant output.",
+    "ja": "Steady temperature rise for a 1 percentage-point increase in constant output.",
+    "aliases": [
+      "Steady temperature rise for a 1 percentage-point increase in constant output."
+    ]
+  },
+  "m109": {
+    "en": "Time from the start of the temperature response to about 63% of its final change.",
+    "ja": "Time from the start of the temperature response to about 63% of its final change.",
+    "aliases": [
+      "Time from the start of the temperature response to about 63% of its final change."
+    ]
+  },
+  "m110": {
+    "en": "Delay between issuing a command and its effect on heating.",
+    "ja": "Delay between issuing a command and its effect on heating.",
+    "aliases": [
+      "Delay between issuing a command and its effect on heating."
+    ]
+  },
+  "m111": {
+    "en": "Ambient temperature",
+    "ja": "Ambient temperature",
+    "aliases": [
+      "Ambient temperature"
+    ]
+  },
+  "m112": {
+    "en": "Temperature of the surroundings receiving the lost heat.",
+    "ja": "Temperature of the surroundings receiving the lost heat.",
+    "aliases": [
+      "Temperature of the surroundings receiving the lost heat."
+    ]
+  },
+  "m113": {
+    "en": "Initial temperature",
+    "ja": "Initial temperature",
+    "aliases": [
+      "Initial temperature"
+    ]
+  },
+  "m114": {
+    "en": "Starting temperature used for each simulation.",
+    "ja": "Starting temperature used for each simulation.",
+    "aliases": [
+      "Starting temperature used for each simulation."
+    ]
+  },
+  "m115": {
+    "en": "Output limit",
+    "ja": "Output limit",
+    "aliases": [
+      "Output limit"
+    ]
+  },
+  "m116": {
+    "en": "Upper limit, with 100% representing rated full output.",
+    "ja": "Upper limit, with 100% representing rated full output.",
+    "aliases": [
+      "Upper limit, with 100% representing rated full output."
+    ]
+  },
+  "m117": {
+    "en": "Positional",
+    "ja": "位置形",
+    "aliases": [
+      "位置形"
+    ]
+  },
+  "m118": {
+    "en": "Incremental",
+    "ja": "増分形",
+    "aliases": [
+      "増分形"
+    ]
+  },
+  "m119": {
+    "en": " / This plant cannot maintain the target",
+    "ja": " ／ この機器では目標を維持できません",
+    "aliases": [
+      " ／ この機器では目標を維持できません"
+    ]
+  },
+  "m120": {
+    "en": "not reached during this run",
+    "ja": "観測期間内では未達",
+    "aliases": [
+      "観測期間内では未達"
+    ]
+  },
+  "m121": {
+    "en": "from {0}s to the end",
+    "ja": "from {0}s to the end",
+    "aliases": [
+      "from {0}s to the end"
+    ]
+  },
+  "m122": {
+    "en": "Custom settings",
+    "ja": "調整した設定",
+    "aliases": [
+      "調整した設定"
+    ]
+  },
+  "m123": {
+    "en": "Pause",
+    "ja": "一時停止",
+    "aliases": [
+      "一時停止"
+    ]
+  },
+  "m124": {
+    "en": "Ki = 0 (I disabled)",
+    "ja": "Ki = 0（I 無効）",
+    "aliases": [
+      "Ki = 0（I 無効）"
+    ]
+  },
+  "m125": {
+    "en": "Kd = 0 (D disabled)",
+    "ja": "Kd = 0（D 無効）",
+    "aliases": [
+      "Kd = 0（D 無効）"
+    ]
+  },
+  "m126": {
+    "en": "Positional form: add P, I and D to the 0% base output to calculate the command.",
+    "ja": "位置形：基準出力 0% に P・I・D を足し、出力の指令値を計算します。",
+    "aliases": [
+      "位置形：基準出力 0% に P・I・D を足し、出力の指令値を計算します。"
+    ]
+  },
+  "m127": {
+    "en": "Incremental form: add ΔP, ΔI and ΔD to the previous calculated command, not to the current temperature. During output limiting, retain the calculated command separately from the actual output.",
+    "ja": "増分形：前回の計算値に ΔP・ΔI・ΔD を足します。「現在温度」からの増分ではありません。出力制限中は、計算値と実際の出力を分けて保持します。",
+    "aliases": [
+      "増分形：前回の計算値に ΔP・ΔI・ΔD を足します。「現在温度」からの増分ではありません。出力制限中は、計算値と実際の出力を分けて保持します。"
+    ]
+  },
+  "m128": {
+    "en": "Steady temperature at constant 100% output: {0}°C. At the current {1}% limit: {2}°C.",
+    "ja": "Steady temperature at constant 100% output: {0}°C. At the current {1}% limit: {2}°C.",
+    "aliases": [
+      "Steady temperature at constant 100% output: {0}°C. At the current {1}% limit: {2}°C."
+    ]
+  },
+  "m129": {
+    "en": "Reference: {0} / Kp {1} / Ti {2}s / Td {3}s / period {4}s / G {5} / τ {6}s / L {7}s",
+    "ja": "Reference: {0} / Kp {1} / Ti {2}s / Td {3}s / period {4}s / G {5} / τ {6}s / L {7}s",
+    "aliases": [
+      "Reference: {0} / Kp {1} / Ti {2}s / Td {3}s / period {4}s / G {5} / τ {6}s / L {7}s"
+    ]
+  },
+  "m130": {
+    "en": "Editing: {0}",
+    "ja": "Editing: {0}",
+    "aliases": [
+      "Editing: {0}"
+    ]
+  },
+  "m131": {
+    "en": "{0}: Current state",
+    "ja": "{0}: Current state",
+    "aliases": [
+      "{0}: Current state"
+    ]
+  },
+  "m132": {
+    "en": "Control",
+    "ja": "制御",
+    "aliases": [
+      "制御"
+    ]
+  },
+  "m133": {
+    "en": "Form",
+    "ja": "方式",
+    "aliases": [
+      "方式"
+    ]
+  },
+  "m134": {
+    "en": "Anti-windup",
+    "ja": "積分制限",
+    "aliases": [
+      "積分制限"
+    ]
+  },
+  "m135": {
+    "en": "Enabled",
+    "ja": "有効",
+    "aliases": [
+      "有効"
+    ]
+  },
+  "m136": {
+    "en": "Disabled",
+    "ja": "無効",
+    "aliases": [
+      "無効"
+    ]
+  },
+  "m137": {
+    "en": "Different settings: ",
+    "ja": "設定の違い　",
+    "aliases": [
+      "設定の違い　"
+    ]
+  },
+  "m138": {
+    "en": "A and B have identical settings. Change a gain or another setting in B to see the difference.",
+    "ja": "A と B は同じ設定です。B のゲインなどを動かすと、違いが見えます。",
+    "aliases": [
+      "A と B は同じ設定です。B のゲインなどを動かすと、違いが見えます。"
+    ]
+  },
+  "m139": {
+    "en": "{0}: {1} · {2} | Kp {3} / Ti {4}s / Td {5}s / period {6}s\nFinal {7}°C / Peak {8}°C\nOutput limited: {9}s{10}",
+    "ja": "{0}: {1} · {2} | Kp {3} / Ti {4}s / Td {5}s / period {6}s\nFinal {7}°C / Peak {8}°C\nOutput limited: {9}s{10}",
+    "aliases": [
+      "{0}: {1} · {2} | Kp {3} / Ti {4}s / Td {5}s / period {6}s\nFinal {7}°C / Peak {8}°C\nOutput limited: {9}s{10}"
+    ]
+  },
+  "m140": {
+    "en": "{0}At {1}s: {2}°C / Maximum excess above target: {3}°C / Remains within ±0.1°C: {4}",
+    "ja": "{0}At {1}s: {2}°C / Maximum excess above target: {3}°C / Remains within ±0.1°C: {4}",
+    "aliases": [
+      "{0}At {1}s: {2}°C / Maximum excess above target: {3}°C / Remains within ±0.1°C: {4}"
+    ]
+  },
+  "m141": {
+    "en": "Maximum temperature difference between forms: {0}°C. Under identical conditions, the lines overlap.",
+    "ja": "Maximum temperature difference between forms: {0}°C. Under identical conditions, the lines overlap.",
+    "aliases": [
+      "Maximum temperature difference between forms: {0}°C. Under identical conditions, the lines overlap."
+    ]
+  },
+  "m142": {
+    "en": "With identical initial states, coefficients and output-limit handling, positional and incremental forms give the same response.",
+    "ja": "同じ初期状態・係数・出力制限処理なら、位置形と増分形は同じ応答になります。",
+    "aliases": [
+      "同じ初期状態・係数・出力制限処理なら、位置形と増分形は同じ応答になります。"
+    ]
+  },
+  "m143": {
+    "en": " This plant cannot maintain the {0}°C target.",
+    "ja": " This plant cannot maintain the {0}°C target.",
+    "aliases": [
+      " This plant cannot maintain the {0}°C target."
+    ]
+  },
+  "m144": {
+    "en": " Time at output limits: {0}s.",
+    "ja": " Time at output limits: {0}s.",
+    "aliases": [
+      " Time at output limits: {0}s."
+    ]
+  },
+  "m145": {
+    "en": "Could not calculate: ",
+    "ja": "計算できませんでした：",
+    "aliases": [
+      "計算できませんでした："
+    ]
+  },
+  "m146": {
+    "en": "Target",
+    "ja": "目標",
+    "aliases": [
+      "目標"
+    ]
+  },
+  "m147": {
+    "en": "Heater command",
+    "ja": "ヒーター指令",
+    "aliases": [
+      "ヒーター指令"
+    ]
+  },
+  "m148": {
+    "en": "Delayed output",
+    "ja": "遅れて届いた出力",
+    "aliases": [
+      "遅れて届いた出力"
+    ]
+  },
+  "m149": {
+    "en": "Incremental form",
+    "ja": "増分形で計算",
+    "aliases": [
+      "増分形で計算"
+    ]
+  },
+  "m150": {
+    "en": "Positional form",
+    "ja": "位置形で計算",
+    "aliases": [
+      "位置形で計算"
+    ]
+  },
+  "m151": {
+    "en": "Saved temperature",
+    "ja": "保存した温度",
+    "aliases": [
+      "保存した温度"
+    ]
+  },
+  "m152": {
+    "en": "Saved target",
+    "ja": "保存した目標",
+    "aliases": [
+      "保存した目標"
+    ]
+  },
+  "m153": {
+    "en": "Saved command",
+    "ja": "保存した指令",
+    "aliases": [
+      "保存した指令"
+    ]
+  },
+  "m154": {
+    "en": "This update: ΔP, ΔI and ΔD",
+    "ja": "今回の増減量 ΔP・ΔI・ΔD",
+    "aliases": [
+      "今回の増減量 ΔP・ΔI・ΔD"
+    ]
+  },
+  "m155": {
+    "en": "P, I and D output contributions",
+    "ja": "出力を構成する P・I・D",
+    "aliases": [
+      "出力を構成する P・I・D"
+    ]
+  },
+  "m156": {
+    "en": "Temperature [°C]",
+    "ja": "温度 [°C]",
+    "aliases": [
+      "温度 [°C]"
+    ]
+  },
+  "m157": {
+    "en": "Output [%]",
+    "ja": "出力 [%]",
+    "aliases": [
+      "出力 [%]"
+    ]
+  },
+  "m158": {
+    "en": "Change [percentage points]",
+    "ja": "変化 [ポイント]",
+    "aliases": [
+      "変化 [ポイント]"
+    ]
+  },
+  "m159": {
+    "en": "Contribution [%]",
+    "ja": "寄与 [%]",
+    "aliases": [
+      "寄与 [%]"
+    ]
+  },
+  "m160": {
+    "en": " over time",
+    "ja": " の時間変化",
+    "aliases": [
+      " の時間変化"
+    ]
+  },
+  "m161": {
+    "en": "Elapsed time [s]",
+    "ja": "経過時間 [s]",
+    "aliases": [
+      "経過時間 [s]"
+    ]
+  },
+  "m162": {
+    "en": "Target ",
+    "ja": "目標 ",
+    "aliases": [
+      "目標 "
+    ]
+  },
+  "m163": {
+    "en": "Control update #{0}: calculated from the {1}°C measurement at {2}s. The command is held until the next update.",
+    "ja": "Control update #{0}: calculated from the {1}°C measurement at {2}s. The command is held until the next update.",
+    "aliases": [
+      "Control update #{0}: calculated from the {1}°C measurement at {2}s. The command is held until the next update."
+    ]
+  },
+  "m164": {
+    "en": "{0}s: temperature {1}°C / output {2}%",
+    "ja": "{0}s: temperature {1}°C / output {2}%",
+    "aliases": [
+      "{0}s: temperature {1}°C / output {2}%"
+    ]
+  },
+  "m165": {
+    "en": "{0}Calculation #{1} (t = {2} s)",
+    "ja": "{0}Calculation #{1} (t = {2} s)",
+    "aliases": [
+      "{0}Calculation #{1} (t = {2} s)"
+    ]
+  },
+  "m166": {
+    "en": "Error e = target − measured temperature = {0} − {1} = {2} °C",
+    "ja": "Error e = target − measured temperature = {0} − {1} = {2} °C",
+    "aliases": [
+      "Error e = target − measured temperature = {0} − {1} = {2} °C"
+    ]
+  },
+  "m167": {
+    "en": "Previous update: e = {0} °C, I = {1} %, D = {2} %",
+    "ja": "Previous update: e = {0} °C, I = {1} %, D = {2} %",
+    "aliases": [
+      "Previous update: e = {0} °C, I = {1} %, D = {2} %"
+    ]
+  },
+  "m168": {
+    "en": "Previous calculated command = {0} % / previous actual output = {1} %",
+    "ja": "Previous calculated command = {0} % / previous actual output = {1} %",
+    "aliases": [
+      "Previous calculated command = {0} % / previous actual output = {1} %"
+    ]
+  },
+  "m169": {
+    "en": "ΔP = Kp × (current e − previous e) = {0} × ({1} − {2}) = {3} pt",
+    "ja": "ΔP = Kp × (current e − previous e) = {0} × ({1} − {2}) = {3} pt",
+    "aliases": [
+      "ΔP = Kp × (current e − previous e) = {0} × ({1} − {2}) = {3} pt"
+    ]
+  },
+  "m170": {
+    "en": "Candidate ΔI = Ki × e × control period = {0} × {1} × {2} = {3} pt",
+    "ja": "Candidate ΔI = Ki × e × control period = {0} × {1} × {2} = {3} pt",
+    "aliases": [
+      "Candidate ΔI = Ki × e × control period = {0} × {1} × {2} = {3} pt"
+    ]
+  },
+  "m171": {
+    "en": "Candidate I increment = Ki × e × control period = {0} × {1} × {2} = {3} pt",
+    "ja": "Candidate I increment = Ki × e × control period = {0} × {1} × {2} = {3} pt",
+    "aliases": [
+      "Candidate I increment = Ki × e × control period = {0} × {1} × {2} = {3} pt"
+    ]
+  },
+  "m172": {
+    "en": "The proposed integral change would drive the command farther beyond an output limit, so this I increment is set to 0.",
+    "ja": "出力制限をさらに超える方向の積分なので、今回の I 増加を 0 にします。",
+    "aliases": [
+      "出力制限をさらに超える方向の積分なので、今回の I 増加を 0 にします。"
+    ]
+  },
+  "m173": {
+    "en": "I = previous I + accepted increment = {0} + {1} = {2} %",
+    "ja": "I = previous I + accepted increment = {0} + {1} = {2} %",
+    "aliases": [
+      "I = previous I + accepted increment = {0} + {1} = {2} %"
+    ]
+  },
+  "m174": {
+    "en": "D = {filter time × previous D − Kd × (current temperature − previous temperature)} / (filter time + control period)",
+    "ja": "D = {filter time × previous D − Kd × (current temperature − previous temperature)} / (filter time + control period)",
+    "aliases": [
+      "D = {filter time × previous D − Kd × (current temperature − previous temperature)} / (filter time + control period)"
+    ]
+  },
+  "m175": {
+    "en": "D = 0 % (derivative action disabled)",
+    "ja": "D = 0 %（微分作用は無効）",
+    "aliases": [
+      "D = 0 %（微分作用は無効）"
+    ]
+  },
+  "m176": {
+    "en": "ΔD = current D − previous D = {0} − {1} = {2} pt",
+    "ja": "ΔD = current D − previous D = {0} − {1} = {2} pt",
+    "aliases": [
+      "ΔD = current D − previous D = {0} − {1} = {2} pt"
+    ]
+  },
+  "m177": {
+    "en": "Calculated command = previous calculated command + ΔP + ΔI + ΔD",
+    "ja": "Calculated command = previous calculated command + ΔP + ΔI + ΔD",
+    "aliases": [
+      "Calculated command = previous calculated command + ΔP + ΔI + ΔD"
+    ]
+  },
+  "m178": {
+    "en": "Calculated command = base output + P + I + D",
+    "ja": "Calculated command = base output + P + I + D",
+    "aliases": [
+      "Calculated command = base output + P + I + D"
+    ]
+  },
+  "m179": {
+    "en": "Actual heater output = calculated command limited to 0–{0}% = {1} %",
+    "ja": "Actual heater output = calculated command limited to 0–{0}% = {1} %",
+    "aliases": [
+      "Actual heater output = calculated command limited to 0–{0}% = {1} %"
+    ]
+  },
+  "m180": {
+    "en": "Change in actual output since the previous update = {0} − {1} = {2} pt",
+    "ja": "Change in actual output since the previous update = {0} − {1} = {2} pt",
+    "aliases": [
+      "Change in actual output since the previous update = {0} − {1} = {2} pt"
+    ]
+  },
+  "m181": {
+    "en": "Initial values: previous error, I, D and calculated command are 0. By convention, the first update also adds one control period of integration.",
+    "ja": "初期値：前回誤差・I・D・計算出力は 0。初回も制御周期 1 回分の積分を加える約束です。",
+    "aliases": [
+      "初期値：前回誤差・I・D・計算出力は 0。初回も制御周期 1 回分の積分を加える約束です。"
+    ]
+  }
+}

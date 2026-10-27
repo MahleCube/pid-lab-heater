@@ -1,0 +1,23 @@
+{
+  "name": "mahlecube-pid-lab",
+  "version": "1.0.0",
+  "description": "An interactive, multilingual PID control learning lab with a virtual heater.",
+  "author": "MahleCube",
+  "homepage": "https://mahlecube.github.io/pid-lab/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MahleCube/pid-lab.git"
+  },
+  "scripts": {
+    "build": "node build.cjs",
+    "test": "node engine.test.cjs",
+    "test:ui": "node ui.test.cjs && node comparison.test.cjs && node localization.test.cjs && node multilingual.test.cjs",
+    "check": "npm run build && npm test && npm run test:ui"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

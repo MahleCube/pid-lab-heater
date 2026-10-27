@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Build intuition for P, PI and PID control with a virtual heater. Adjust gains, compare responses side by side, and follow each calculation in 10 language options.">
+  <title>PID Lab — Explore control with a virtual heater</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="engine.js"></script>
+  <script defer src="translations.js"></script>
+  <script defer src="locale.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-copy"><span class="eyebrow">CONTROL EXPLORER</span><h1>PIDラボ</h1><p>仮想ヒーターで、制御の感覚をつかむ</p></div>
+    <div class="header-actions">
+      <section id="language-settings" class="language-settings" aria-labelledby="language-title">
+        <div class="language-switch">
+          <label id="language-title" for="language-select"><svg class="language-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18M5 6.5h14M5 17.5h14"></path></svg><span>表示言語</span></label>
+          <select id="language-select" aria-label="表示言語"></select>
+        </div>
+        <ul id="language-hints" class="language-hints" translate="no" data-no-translate>
+          <li lang="en">Language settings</li>
+          <li lang="ja">言語設定</li>
+          <li lang="zh-Hans">语言设置</li>
+          <li lang="zh-Hant">語言設定</li>
+          <li lang="ko">언어 설정</li>
+          <li lang="es">Configuración de idioma</li>
+          <li lang="pt-BR">Configurações de idioma</li>
+          <li lang="fr">Paramètres de langue</li>
+          <li lang="de">Spracheinstellungen</li>
+          <li lang="id">Pengaturan bahasa</li>
+        </ul>
+      </section>
+      <div class="header-note"><span class="status-dot" aria-hidden="true"></span>設定を動かすたびに、<br>同じ初期状態から再計算します。</div>
+    </div>
+  </header>
+  <nav class="mobile-jumps" aria-label="画面内の移動"><a href="#controller-panel">制御器</a><a href="#plant-panel">機器モデル</a><a href="#results-panel">グラフ</a></nav>
+
+  <div id="app-error" class="app-error" role="alert" hidden></div>
+
+  <main class="lab-layout">
+    <aside id="controller-panel" class="settings-panel controller-panel" aria-labelledby="controller-heading">
+      <div class="panel-heading"><span class="section-number" aria-hidden="true">01</span><div><h2 id="controller-heading">制御器の調整</h2><p>どのように操作するか</p><span id="editing-label" class="editing-label" hidden></span></div></div>
+
+      <div class="select-field"><label for="preset">試してみる設定</label><select id="preset"><option value="basic">基本の PI 制御</option><option value="proportional">P だけで制御する</option><option value="fast" selected>速い PID 制御</option><option value="oscillate">積分を強くする</option><option value="saturation">出力の上限を体感する</option></select></div>
+      <div class="select-pair"><div class="select-field"><label for="mode">制御の種類</label><select id="mode"><option value="P">P</option><option value="PI">PI</option><option value="PID" selected>PID</option></select></div></div>
+      <div class="select-field"><label for="form">出力の計算方法</label><select id="form"><option value="position">基準点から計算（位置形）</option><option value="incremental">前回の計算値から更新（増分形）</option></select></div>
+      <p id="form-description" class="field-note"></p>
+
+      <div id="controller-fields" class="fields-stack"></div>
+      <output id="derived-gains" class="derived-gains" aria-label="換算した積分ゲインと微分ゲイン"></output>
+      <p class="field-note">時間形式を使用：Ki = Kp / Ti、Kd = Kp × Td。Kp を動かすと Ki・Kd も変わります。</p>
+      <label class="check-row"><input type="checkbox" id="antiWindup" checked><span>積分のたまりすぎを防ぐ<small>出力が上限・下限に達したとき</small></span></label>
+    </aside>
+
+    <section id="results-panel" class="results-panel" aria-label="シミュレーション結果">
+      <section class="view-toolbar" aria-label="波形の表示方法">
+        <div class="view-mode-field"><label for="view-mode">表示モード</label><select id="view-mode"><option value="single">1つの設定</option><option value="compare">A / B を並べて比較</option></select></div>
+        <div id="comparison-editor" class="comparison-editor" hidden>
+          <div class="case-edit-actions"><div class="case-edit-switch" role="group" aria-label="編集する設定"><button id="edit-a" type="button" aria-pressed="true">A を編集</button><button id="edit-b" type="button" aria-pressed="false">B を編集</button></div><button id="copy-a-to-b" type="button">A の設定を B にコピー</button></div>
+          <p class="field-note">編集する設定を選び、制御器・機器モデルの調整欄で変更。観測期間と時刻は共通です。</p>
+          <p id="case-differences" class="case-differences" aria-live="polite"></p>
+        </div>
+      </section>
+      <section class="device-state" aria-labelledby="state-heading">
+        <div class="state-heading"><h2 id="state-heading">現在の状態</h2><span class="readonly-label">グラフ上の選択時刻</span></div>
+        <div class="state-values">
+          <div><span class="metric-label">温度</span><output id="temperature-value" class="metric-value">20.00 <small>°C</small></output></div>
+          <div><span class="metric-label">目標との差</span><output id="error-value" class="metric-value">10.00 <small>°C</small></output></div>
+          <div><span class="metric-label">ヒーター出力</span><output id="output-value" class="metric-value">0.0 <small>%</small></output></div>
+          <div><span class="metric-label">遅れて届いた出力</span><output id="delayed-value" class="metric-value">0.0 <small>%</small></output></div>
+        </div>
+        <div class="device-meters" aria-hidden="true"><div class="device-meter"><span>温度</span><div class="meter-track temperature-track"><span id="temperature-fill" style="width:0%"></span></div><span id="device-target">目標 30 °C</span></div><div class="device-meter"><span>加熱</span><div class="meter-track heat-track"><span id="heat-fill" style="width:0%"></span></div><span>最大出力の割合</span></div></div>
+      </section>
+
+      <section class="playback-bar" aria-label="時間の操作">
+        <div class="playback-top"><div class="playback-buttons"><button type="button" id="play" class="primary-button">再生</button><button type="button" id="prev-step" aria-label="前の制御周期へ">← 1周期</button><button type="button" id="next-step" aria-label="次の制御周期へ">1周期 →</button></div><div class="horizon-field"><label for="horizon">観測期間</label><select id="horizon"><option value="180">180 秒</option><option value="300">300 秒</option><option value="600" selected>600 秒</option><option value="1200">1,200 秒</option><option value="1800">1,800 秒</option></select></div></div>
+        <label class="time-label" for="time-cursor"><span>選択時刻</span><output id="time-label">0.0 秒</output></label>
+        <input id="time-cursor" type="range" min="0" max="600" value="0" step="0.1">
+        <p id="time-detail" class="field-note"></p>
+      </section>
+
+      <div class="comparison-controls"><label class="check-row compact-check"><input id="compareForms" type="checkbox" checked><span>もう一方の計算方法を重ねる</span></label><div class="reference-buttons"><button id="save-reference" type="button">参考線として残す</button><button id="clear-reference" type="button" hidden>参考線を消す</button></div></div>
+      <p id="comparison-status" class="comparison-status" aria-live="polite"></p>
+      <p id="reference-label" class="reference-label"></p>
+
+      <p id="comparison-chart-note" class="field-note comparison-chart-note" hidden>左右の縦軸・時間軸をそろえて表示します。比較中の P・I・D は、計算方法が異なる場合も「出力への寄与」で統一します。</p>
+      <div id="waveform-grid" class="waveform-grid">
+        <section class="chart-section" aria-labelledby="temperature-title">
+          <div class="case-summary-wrapper compare-only" hidden><div id="case-a-summary" class="case-summary"></div><output id="case-a-live" class="case-live"></output></div>
+          <div class="chart-title-row"><span class="case-tag">A</span><h2 id="temperature-title">温度は目標に近づくか</h2><span class="chart-unit">温度 °C</span></div><div id="temperature-chart" class="chart-container"></div><div id="temperature-legend" class="chart-legend" aria-label="温度グラフの凡例"></div>
+        </section>
+        <section class="chart-section compare-only" aria-labelledby="temperature-b-title" hidden>
+          <div class="case-summary-wrapper"><div id="case-b-summary" class="case-summary"></div><output id="case-b-live" class="case-live"></output></div>
+          <div class="chart-title-row"><span class="case-tag">B</span><h2 id="temperature-b-title">温度は目標に近づくか</h2><span class="chart-unit">温度 °C</span></div><div id="temperature-b-chart" class="chart-container"></div><div id="temperature-b-legend" class="chart-legend" aria-label="B の温度グラフの凡例"></div>
+        </section>
+        <section class="chart-section" aria-labelledby="output-title"><div class="chart-title-row"><span class="case-tag">A</span><h2 id="output-title">ヒーターをどれだけ動かしたか</h2><span class="chart-unit">最大出力に対する %</span></div><div id="output-chart" class="chart-container"></div><div id="output-legend" class="chart-legend" aria-label="出力グラフの凡例"></div></section>
+        <section class="chart-section compare-only" aria-labelledby="output-b-title" hidden><div class="chart-title-row"><span class="case-tag">B</span><h2 id="output-b-title">ヒーターをどれだけ動かしたか</h2><span class="chart-unit">最大出力に対する %</span></div><div id="output-b-chart" class="chart-container"></div><div id="output-b-legend" class="chart-legend" aria-label="B の出力グラフの凡例"></div></section>
+        <section class="chart-section" aria-labelledby="terms-title"><div class="chart-title-row"><span class="case-tag">A</span><h2 id="terms-title">P・I・D の働き</h2><span class="chart-unit">計算への寄与</span></div><div id="terms-chart" class="chart-container"></div><div id="terms-legend" class="chart-legend" aria-label="制御項のグラフの凡例"></div></section>
+        <section class="chart-section compare-only" aria-labelledby="terms-b-title" hidden><div class="chart-title-row"><span class="case-tag">B</span><h2 id="terms-b-title">P・I・D の働き</h2><span class="chart-unit">計算への寄与</span></div><div id="terms-b-chart" class="chart-container"></div><div id="terms-b-legend" class="chart-legend" aria-label="B の制御項のグラフの凡例"></div></section>
+      </div>
+
+      <div id="status-summary" class="status-summary" aria-live="polite"></div>
+
+      <details class="explanation-detail" open><summary>この瞬間の計算を追う</summary><div id="calculation" class="calculation"></div></details>
+      <details class="explanation-detail"><summary>モデルと用語を確認する</summary><div class="glossary">
+        <p><strong>出力の %</strong> はヒーターの最大出力に対する割合です。10% は最大出力の 1/10。増分が「+10」のときは、20% → 30% のように 10 ポイント加えます。20% × 1.1 = 22% という意味ではありません。</p>
+        <p><strong>機器ゲイン G</strong> は、出力を 1 ポイント増やして十分に待ったときに温度が何 °C 上がるかを表します。<strong>時定数 τ</strong> は、一定出力への温度変化が始まってから、最終的な温度変化の約 63.2% に達するまでの時間です。<strong>むだ時間 L</strong> は、操作が温度に影響し始めるまでの待ち時間です。操作してから約 63.2% に達するまでは L + τ かかります。</p>
+        <p><strong>Kp</strong> は現在の誤差への反応の強さ。<strong>積分時間 Ti</strong> は短いほど I の蓄積が速くなります。<strong>微分時間 Td</strong> は大きいほど温度変化への補正が強くなります。ここでは Ki = Kp / Ti、Kd = Kp × Td と換算するため、Kp の変更は I・D の強さにも影響します。</p>
+        <p><strong>制御周期 Ts</strong> は、温度を読み取って出力を計算し直す間隔です。計算と計算の間は出力を保持します。ヒーターを電気的に ON / OFF する PWM の周期とは別です。</p>
+        <p><strong>位置形と増分形</strong> は、同じゲイン・初期状態・制限処理なら同じ応答を生みます。増分形は前回の計算値に「今回の変化分」を足します。出力を制限している間は、内部の計算値と実際のヒーター出力を区別します。</p>
+        <p><strong>D 項</strong> は温度の変化から計算し、微分フィルターで急激な変化をなめらかにします。目標値を変えただけでは微分の跳ね上がりは発生しません。</p>
+        <p><strong>収束時間</strong> は、表示した観測期間の残り全体で目標の ±0.1 °C に収まる最初の時刻です。期間内に収まらなくても、それだけで不安定とは判断できません。</p>
+      </div></details>
+    </section>
+
+    <aside id="plant-panel" class="settings-panel plant-panel" aria-labelledby="plant-heading">
+      <div class="panel-heading"><span class="section-number" aria-hidden="true">02</span><div><h2 id="plant-heading">機器モデル</h2><p>仮想ヒーターの性質</p></div></div>
+      <div id="plant-fields" class="fields-stack"></div>
+      <p id="model-description" class="model-description"></p>
+      <div class="plant-note"><span class="note-label">機器と制御器の違い</span><p>こちらは機器そのものの性質です。現実では機器を測定して把握します。このラボでは自由に変更して、同じ制御器がどう反応するかを試せます。</p></div>
+    </aside>
+  </main>
+
+  <footer class="app-footer"><p>学習用の一次遅れ＋むだ時間モデル。放熱する仮想ヒーターを想定しています。実機向けの調整値や安全性を保証するものではありません。</p><p class="project-links" translate="no" data-no-translate>Developed by <a href="https://github.com/MahleCube" target="_blank" rel="noopener noreferrer">MahleCube</a><span aria-hidden="true">·</span><a href="https://github.com/MahleCube/pid-lab" target="_blank" rel="noopener noreferrer">GitHub</a></p></footer>
+  <div id="chart-tooltip" class="chart-tooltip" role="tooltip" hidden></div>
+</body>
+</html>
